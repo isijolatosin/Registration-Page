@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.alert {
+  /* margin-bottom: 1rem; */
+  height: 2.5rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+}
+.success {
+  color: #155724;
+  background: #d4edda;
+  padding-bottom: 10px;
+}
+
+p {
+  color: #363636;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-weight: 800;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: 'Montserrat';
+}
+
+.container {
+  background-image: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.2)),
+    url('https://img2.goodfon.com/wallpaper/nbig/1/b4/samsung-nx1-4k-daegu-south.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 35px;
+  background-color: white;
+  padding: 0;
+  text-align: center;
+}
+
+.reg-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.logo span {
+  color: #5fdde5;
+}
+
+.logo {
+  padding-right: 15px;
+  border-right: 1px solid #5fdde5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 0;
+}
+
+.nav-content {
+  background-color: rgba(255, 255, 255, 0.05);
+  height: 50px;
+}
+
+.nav-toggle {
+  cursor: pointer;
+}
+
+.navigation {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  margin-top: 5px;
+  padding: 5px 0;
+  position: relative;
+  height: 100%;
+  text-align: left;
+  width: 100%;
+  left: -100%;
+  transition: all 500ms linear;
+}
+
+.navigation ul li a {
+  color: #fff;
+  opacity: 0.7;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.navigation ul li a:hover {
+  color: #5fdde5;
+  opacity: 1;
+}
+
+.navigation ul {
+  list-style-type: none;
+}
+
+.left-container {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 45%;
+}
+
+.left-container-content h2 {
+  color: #5fdde5;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: italic;
+}
+
+.left-container-content p {
+  color: #fff;
+  margin: 120px auto 0;
+  letter-spacing: 0.17rem;
+}
+
+.footer p {
+  color: #fff;
+  font-style: italic;
+  font-size: 0.65rem;
+  letter-spacing: 0.19rem;
+  margin: 450px auto 100px;
+}
+
+.right-container {
+  background-color: #fff;
+  width: 55%;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.right-container-content {
+  margin: auto;
+  width: 70%;
+}
+
+.form-heading {
+  text-align: left;
+  margin-top: 60px;
+  margin-left: 87px !important;
+  margin-bottom: 15px;
+}
+
+.form-heading h1 {
+  color: #5fdde5;
+}
+
+.form-heading p {
+  color: #4a3f35;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  opacity: 0.7;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px;
+}
+
+.name p {
+  margin: 0;
+  padding-top: 15px;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+.name-input {
+  background-color: #f7f7f7;
+  border: 0.05rem solid #f7f7f7;
+  border-radius: 3px;
+  color: #4a3f35;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.5;
+  padding: 20px;
+  width: 80%;
+  height: 45px;
+}
+
+.subscription {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto 20px;
+}
+
+.subscription p {
+  font-weight: 600;
+  letter-spacing: 0;
+  margin: 3px 0 0 0;
+}
+
+.subscription ul li {
+  display: inline;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.gender {
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 600;
+  justify-content: left;
+}
+
+.gender p {
+  margin-right: 50px;
+  margin-top: 5px;
+  letter-spacing: 0;
+}
+
+.gender-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gender-content .fas {
+  background-color: #e8e4e1;
+  border-radius: 100%;
+  color: #fff;
+  cursor: pointer;
+  height: 30px;
+  margin: 0 15px 0 0;
+  padding: 5px;
+  width: 30px;
+}
+
+.btn {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.btn button {
+  background-color: #07031a;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  padding: 15px 55px;
+}
+
+.btn :hover {
+  background-color: #222831;
+}
+
+.showNav {
+  left: 0;
+}
+
+.show {
+  display: block;
+}
+
+.B-color {
+  background-color: #5fdde5 !important;
+}
+
+.color {
+  color: #5fdde5 !important;
+}
+
+.fail {
+  border-color: red;
+}
+.complete {
+  border-color: green;
+}
+
+:disabled {
+  opacity: 0.2 !important;
+}
+
+.feedback {
+  display: none;
+}
+.loading {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .left-container-content p {
+    font-size: 0.5rem;
+  }
+
+  .form-heading {
+    text-align: left;
+    margin-left: 78px !important;
+  }
+
+  .form-heading h1 {
+    font-size: 2rem;
+  }
+
+  .dob-paragraph {
+    text-align: left;
+    padding-top: 0 !important;
+    width: 55px;
+  }
+
+  .btn button {
+    font-size: 0.8rem;
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .left-container-content p {
+    font-size: 0.2rem;
+  }
+
+  .form-heading {
+    text-align: left;
+    margin-left: 55px;
+  }
+
+  .form-heading {
+    margin-left: 57px !important;
+  }
+
+  .form-heading h1 {
+    color: #5fdde5;
+    font-size: 2rem;
+  }
+
+  .form-heading p {
+    margin-bottom: 0;
+  }
+
+  .btn button {
+    font-size: 0.6rem;
+    margin-left: 10px;
+    padding: 10px 30px;
+  }
+
+  .gender-content p {
+    margin-right: 20px;
+  }
+
+  .category-name {
+    margin-right: 35px !important;
+  }
+
+  .dob-paragraph {
+    text-align: left;
+    padding-top: 0 !important;
+    width: 55px;
+  }
+
+  .subscription ul li {
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url('https://img2.goodfon.com/wallpaper/nbig/1/b4/samsung-nx1-4k-daegu-south.jpg');
+    background-position: top;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .reg-container {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .left-container {
+    width: 100%;
+  }
+
+  .right-container {
+    border-radius: 0;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer p {
+    margin: 500px auto 100px;
+  }
+
+  .left-container-content h2 {
+    font-size: 2.6rem;
+  }
+
+  .left-container-content p {
+    font-size: 0.8rem;
+  }
+
+  .form-heading {
+    margin: 0 !important;
+  }
+
+  .form-heading h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    padding-top: 100px;
+  }
+
+  .form-heading p {
+    font-size: 0.79rem;
+    text-align: center;
+  }
+
+  .category-name {
+    margin-right: 30px !important;
+  }
+
+  .gender-content p {
+    margin-right: 10px;
+  }
+
+  .subscription {
+    display: flex;
+    justify-content: left;
+  }
+
+  .subscription p {
+    margin-right: 50px;
+  }
+
+  .subscription ul li {
+    display: inline;
+    padding: 0 15px 0 0;
+  }
+
+  .btn {
+    justify-content: center;
+  }
+
+  .btn button {
+    margin-left: 10px;
+    padding: 15px 50px;
+    margin-bottom: 50px;
+  }
+}

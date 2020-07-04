@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Portal</title>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/72aabb29f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="reg-container">
+        <div class="left-container">
+          <nav class="nav-content">
+            <nav class="navbar">
+              <div class="logo">
+                <div><span>i</span>Design</div>
+              </div>
+              <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </div>
+            </nav>
+            <div class="navigation">
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="left-container-content">
+            <p>A CLICK AWAY FROM LEARNING</p>
+            <h2>Photography.</h2>
+          </div>
+          <div class="footer">
+            <p>YOUR JOURNEY BEGINS HERE...</p>
+          </div>
+        </div>
+
+        <div class="right-container">
+          <div class="right-container-content">
+            <div class="form-heading">
+              <h1>Registration</h1>
+              <p>A CLICK AWAY FROM KNOWLEDGE</p>
+            </div>
+            <p class="alert" id="alert"></p>
+            <form class="reg-form">
+              <!-- Name input -->
+              <div class="name">
+                <p>Name</p>
+                <input
+                  id="name"
+                  type="text"
+                  class="name-input"
+                  placeholder="Tosin Isijola"
+                />
+              </div>
+
+              <!-- Email input -->
+              <div class="name">
+                <p>Email</p>
+                <input
+                  id="email"
+                  type="email"
+                  class="name-input"
+                  placeholder="tosinisijola@gmail.com"
+                />
+              </div>
+
+              <!-- Gender -->
+              <div class="gender" id="gender">
+                <p class="category-name">Gender</p>
+                <div class="gender-content">
+                  <i class="fas fa-mars fa-2x fas-male"></i>
+                  <p>Male</p>
+                  <i class="fas fa-venus fa-2x fas-female"></i>
+                  <p>Female</p>
+                </div>
+              </div>
+
+              <!-- Date of Birth -->
+              <div class="name">
+                <p class="dob-paragraph">Date of Birth</p>
+                <input
+                  id="date-of-birth"
+                  type="text"
+                  class="name-input"
+                  placeholder="01 / 01 / 2020"
+                />
+              </div>
+
+              <!-- city -->
+              <div class="name">
+                <p>City</p>
+                <input
+                  id="city"
+                  type="text"
+                  class="name-input"
+                  placeholder="City"
+                />
+              </div>
+
+              <!-- Country -->
+              <div class="name">
+                <p>Country</p>
+                <input
+                  id="country"
+                  type="text"
+                  class="name-input"
+                  placeholder="Country"
+                />
+              </div>
+            </form>
+
+            <!-- Subscription -->
+            <div class="subscription">
+              <p>Subscription</p>
+              <ul class="list-item">
+                <li class="item-bronze">Bronze</li>
+                <li class="item-silver">Silver</li>
+                <li class="item-gold">Gold</li>
+              </ul>
+            </div>
+
+            <!-- Button -->
+            <div class="btn">
+              <button type="submit">CANCEL</button>
+              <button class="submitBtn" type="submit">CONFIRM</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
